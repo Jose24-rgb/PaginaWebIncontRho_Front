@@ -3,6 +3,17 @@ import { Link } from 'react-router-dom'; // Importa Link per i riferimenti inter
 import './IlTuoSupportoPerIncontRho.css'; // Assicurati che il percorso del CSS sia corretto
 
 const IlTuoSupportoPerIncontRho = () => {
+  const [data, setData] = useState(null);
+
+  useEffect(() => {
+    fetch('https://paginawebincontrho-back.onrender.com/api/pages/supporto')
+      .then(res => res.json())
+      .then(setData)
+      .catch(err => console.error(err));
+  }, []);
+
+  if (!data) return <p>Caricamento...</p>;
+  
   return (
     <div className="container my-5">
       <h1 className="text-center mb-4 text-primary">Il Tuo Supporto per IncontRho</h1>

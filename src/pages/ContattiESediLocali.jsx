@@ -4,6 +4,19 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import './ContattiESediLocali.css';
 
 export default function ContattiESediLocali() {
+  const [sedi, setSedi] = useState([]);
+  const [contatti, setContatti] = useState([]);
+
+  useEffect(() => {
+    fetch('https://paginawebincontrho-back.onrender.com/api/pages/contatti')
+      .then(res => res.json())
+      .then(data => {
+        setSedi(data.sedi);
+        setContatti(data.contatti);
+      })
+      .catch(err => console.error(err));
+  }, []);
+
   const sede1Address = "Piazza Chiesa, 20, 20017 Rho MI";
   const sede1MapEmbedUrl = `https://www.google.com/maps/d/u/0/embed?mid=1GneUAQvdOte9rtI0szf2VSoIc7r10PM&ehbc=2E312F`;
   const sede2Address = "Via Antonio Gramsci, 63, 20044 Arese MI";

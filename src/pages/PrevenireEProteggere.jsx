@@ -2,6 +2,30 @@ import React from 'react';
 import '../App.css'; // Assicurati che il percorso del CSS sia corretto
 
 const PrevenireEProteggere = () => {
+  const [contenuti, setContenuti] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch('https://paginawebincontrho-back.onrender.com/api/pages/prevenire-proteggere')
+      .then((res) => {
+        if (!res.ok) throw new Error('Errore nel server');
+        return res.json();
+      })
+      .then((data) => {
+        setContenuti(data);
+        setLoading(false);
+      })
+      .catch((err) => {
+        console.error(err);
+        setError('Impossibile caricare i contenuti.');
+        setLoading(false);
+      });
+  }, []);
+
+  if (loading) return <p>Caricamento in corso...</p>;
+  if (error) return <p>{error}</p>;
+  
   return (
     <div className="container my-5">
       <h1 className="text-center mb-4 text-primary">Prevenire è Proteggere</h1>
