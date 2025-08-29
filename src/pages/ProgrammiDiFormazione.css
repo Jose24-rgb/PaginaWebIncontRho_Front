@@ -1,0 +1,48 @@
+/* Titoli specifici Programmi di Formazione */
+.titolo-corsi {
+    font-size: 43px !important;
+  margin-top: 0.0rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #2B2B85 !important;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
+  }
+  
+  .titolo-formazione-tempo-libero {
+    font-size: 43px !important;
+  margin-top: 0.0rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #2B2B85 !important;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
+  }
+  
+  .titolo-formazione-territorio {
+    font-size: 43px !important;
+  margin-top: 0.0rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #2B2B85 !important;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
+  }
+  
+  
+.titolo-programmi {
+    font-size: 55px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #2B2B85 !important;
+  }
+  
+  .text-center.mt-4 > .programmi-final {
+    font-size: 27px !important;
+    color: #2B2B85 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    font-weight: bold !important;
+    margin-top: 2rem !important; /* spazio sopra il paragrafo */
+  }
+  

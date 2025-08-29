@@ -1,0 +1,108 @@
+h1, h2, h3, h4, h5, h6,
+.text-primary,
+.text-secondary {
+  color: #2B2B85 !important; 
+}
+
+
+h3, h4, h5, h6 {
+  font-size: 24px !important;
+}
+
+h1, h2 {
+  font-size: 43px !important;
+}
+
+section.bg-light h1,
+section.bg-light h2,
+h1.text-primary,
+h2.text-secondary {
+  font-size: 43px !important;
+}
+
+
+
+body,
+p,
+li,
+strong,
+a {
+  color: #2B2B85 !important; 
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+}
+
+
+.bg-light {
+  background-color: #fac460 !important;
+}
+
+
+section.bg-light p,
+div.bg-light p { 
+  text-align: left; 
+  margin-left: 0;   
+  padding-left: 0; 
+}
+
+
+section.bg-light h2,
+section.bg-light h3,
+div.bg-light h2 { 
+  text-align: left;
+  margin-left: 0; 
+  padding-left: 0;
+}
+
+
+section.bg-light ul,
+div.bg-light ul {
+  list-style-position: inside; 
+  padding-left: 1.5em; 
+  margin-left: 0px;
+  list-style-type: disc;
+  text-align: left;
+}
+
+section.bg-light li,
+div.bg-light li {
+  padding-left: -1.5em !important;
+  text-indent: -1.5em !important;
+  margin-bottom: 0.5em; 
+  color: #2B2B85 !important;
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+  text-align: left;
+}
+
+
+
+section.bg-light p strong {
+  display: block; 
+  text-align: left; 
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+.text-center.mt-4 p {
+  text-align: center; 
+  font-size: 24px !important;
+  color: #2B2B85 !important;
+}
+
+.titolo-contatti {
+  font-size: 55px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  color: #2B2B85 !important;
+}
+
+div.text-center.mt-4 p.visione-final {
+  font-size: 27px !important;
+  color: #2B2B85 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  font-weight: bold !important;
+}
+

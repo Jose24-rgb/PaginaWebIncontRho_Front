@@ -1,0 +1,59 @@
+.home-page-bg {
+    background-color: rgb(0, 0, 0) !important;
+  }
+  
+  /* Mantieni il background originale di quella sezione */
+  .bg-info-subtle {
+    background-color: #fac460 !important;
+    padding: 3rem 1rem; /* padding coerente con il componente */
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    border: 3px solid rgb(209, 243, 237);
+    border-bottom: transparent;
+    border-right: transparent;
+    border-left: transparent;
+    margin-bottom: -10px;
+
+
+  }
+  
+  /* Titolo principale */
+  .bg-info-subtle h1.custom-title {
+    font-size: 3.5rem !important;
+    color: #2B2B85 !important;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  
+  /* Pulsante principale */
+  .bg-info-subtle .btn-primary {
+    background-color: rgb(143, 253, 40) !important;
+    border-color: #2B2B85 !important;
+    color: #2B2B85 !important;
+  }
+  
+  .bg-info-subtle .btn-primary:hover {
+    background-color: rgba(175, 175, 0, 0.897) !important;
+    border-color: #4545cf !important;
+    color: white !important;
+  }
+  
+  /* Pulsante outline */
+  .bg-info-subtle .btn-outline-primary {
+    color: #2B2B85 !important;
+    border-color: #2B2B85 !important;
+    background-color: rgb(143, 253, 40) !important;
+  }
+  
+  .bg-info-subtle .btn-outline-primary:hover {
+    background-color: rgba(175, 175, 0, 0.897) !important;
+    border-color: #4545cf !important;
+    color: white !important;
+  }
+  
+.bg-info-subtle p.custom-subtitle {
+    font-size: 2.0rem !important;   /* dimensione testo più grande */
+    
+}

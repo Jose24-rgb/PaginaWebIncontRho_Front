@@ -1,0 +1,7 @@
+.container.my-5 > div.text-center.mt-4 > p {
+    font-size: 27px !important;
+    color: #2B2B85 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    font-weight: bold !important;
+}
