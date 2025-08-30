@@ -343,3 +343,140 @@ footer.footer-custom.home-footer {
   bottom: 0px;
   container: flex;
 }
+
+/* ========================= */
+/* Responsive adjustments    */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .floating-image {
+    left: 50%;
+    width: 900px;
+    height: auto;
+  }
+  .floating-image2 {
+    left: 50%;
+    width: 600px;
+    height: auto;
+  }
+  .footer-image {
+    left: 50%;
+    width: 900px;
+    height: auto;
+  }
+  .footer-image2 {
+    left: 50%;
+    width: 900px;
+    height: auto;
+  }
+  .custom-modal-width {
+    width: 90% !important;
+  }
+  .modal-body {
+    padding-right: 2rem;
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .modal-body .row.gy-4 {
+    flex-wrap: wrap !important;
+    gap: 1rem !important;
+  }
+  .custom-nav-link {
+    width: 100% !important;
+    font-size: 18px !important;
+  }
+  .modal-column-title {
+    font-size: 25px !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .floating-image {
+    width: 700px;
+    height: auto;
+  }
+  .floating-image2 {
+    width: 500px;
+    height: auto;
+  }
+  .footer-image,
+  .footer-image2 {
+    width: 700px;
+    height: auto;
+  }
+  .top-bar-text {
+    font-size: 18px !important;
+  }
+  .info-bar .top-bar-link.fw-bold.text-primary {
+    font-size: 16px !important;
+  }
+  .btn-primary,
+  .btn-outline-primary {
+    width: 100% !important;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .floating-image,
+  .floating-image2 {
+    display: none !important;
+  }
+  .navbar-logo {
+    height: 120px !important;
+  }
+  .footer-image,
+  .footer-image2 {
+    width: 100% !important;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .modal-title {
+    font-size: 32px !important;
+  }
+  .modal-column-title {
+    font-size: 20px !important;
+  }
+  .custom-nav-link {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .modal-body {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .top-bar-text {
+    font-size: 16px !important;
+  }
+  .info-bar .top-bar-link.fw-bold.text-primary {
+    font-size: 14px !important;
+  }
+  .btn-primary,
+  .btn-outline-primary {
+    font-size: 14px;
+    height: 50px;
+  }
+  .navbar-logo {
+    height: 100px !important;
+  }
+  .modal-title {
+    font-size: 28px !important;
+  }
+  .modal-column-title {
+    font-size: 18px !important;
+  }
+  .custom-nav-link {
+    font-size: 14px !important;
+  }
+  .custom-modal-width {
+    width: 95% !important;
+  }
+  .modal-body {
+    height: auto !important;
+  }
+}
+
+
