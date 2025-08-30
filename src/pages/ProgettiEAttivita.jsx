@@ -1,6 +1,4 @@
-// src/components/ProgettiEAttivita.jsx
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './ProgettiEAttivita.css'; // Assicurati che il percorso sia corretto
 
 const ProgettiEAttivita = () => {
