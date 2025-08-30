@@ -1,19 +1,9 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom'; 
 import './Home.css';
 
 export default function Home() {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('https://paginawebincontrho-back.onrender.com/api/pages/home')
-      .then(res => res.json())
-      .then(setData)
-      .catch(err => console.error(err));
-  }, []);
-
-  if (!data) return <p>Caricamento...</p>;
   
   return (
     <div className="home-page-bg">  

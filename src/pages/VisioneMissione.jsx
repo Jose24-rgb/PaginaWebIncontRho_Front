@@ -1,26 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './VisioneMissione.css'; // Assicurati che il percorso del CSS sia corretto
 
 const VisioneMissione = () => {
-  const [data, setData] = useState(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    fetch('https://paginawebincontrho-back.onrender.com/api/pages/visionemissione')
-      .then(res => {
-        if (!res.ok) throw new Error('Errore nella chiamata al server');
-        return res.json();
-      })
-      .then(json => setData(json))
-      .catch(err => {
-        console.error('Errore nel fetch:', err);
-        setData(null); // fallback ai dati statici
-      })
-      .finally(() => setLoading(false));
-  }, []);
-
-  if (loading) return <p>Caricamento in corso...</p>;
-  if (!data) return <p>Dati non disponibili.</p>;
   
   return (
     <div className="container my-5">

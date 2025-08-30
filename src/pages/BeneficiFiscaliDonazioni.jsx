@@ -1,17 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import './BeneficiFiscaliDonazioni.css'; // Assicurati che il percorso del CSS sia corretto
 
 const BeneficiFiscaliDonazioni = () => {
-  const [datiFiscali, setDatiFiscali] = useState(null);
-
-  useEffect(() => {
-    fetch('https://paginawebincontrho-back.onrender.com/api/pages/benefici-fiscali')
-      .then(res => res.json())
-      .then(data => setDatiFiscali(data))
-      .catch(err => console.error(err));
-  }, []);
-
-  if (!datiFiscali) return <p>Caricamento dati fiscali...</p>;
   
   return (
     <div className="container my-5">

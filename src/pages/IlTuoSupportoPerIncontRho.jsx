@@ -1,18 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom'; // Importa Link per i riferimenti interni
 import './IlTuoSupportoPerIncontRho.css'; // Assicurati che il percorso del CSS sia corretto
 
 const IlTuoSupportoPerIncontRho = () => {
-  const [data, setData] = useState(null);
-
-  useEffect(() => {
-    fetch('https://paginawebincontrho-back.onrender.com/api/pages/supporto')
-      .then(res => res.json())
-      .then(setData)
-      .catch(err => console.error(err));
-  }, []);
-
-  if (!data) return <p>Caricamento...</p>;
   
   return (
     <div className="container my-5">
