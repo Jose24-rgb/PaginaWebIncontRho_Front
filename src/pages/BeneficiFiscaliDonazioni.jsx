@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './BeneficiFiscaliDonazioni.css'; // Assicurati che il percorso del CSS sia corretto
 
 const BeneficiFiscaliDonazioni = () => {

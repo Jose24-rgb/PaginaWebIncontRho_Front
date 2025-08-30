@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'; // Importa Link per i riferimenti interni
 import './IlTuoSupportoPerIncontRho.css'; // Assicurati che il percorso del CSS sia corretto
 
