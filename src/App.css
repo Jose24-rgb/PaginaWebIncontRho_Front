@@ -348,11 +348,26 @@ footer.footer-custom.home-footer {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px){
   .navbar {
     position: relative;
     z-index: 2;
   }
+     
+  .navbar .d-flex.flex-column {
+    gap: 6px;
+    align-items: flex-end!important
+  }
+ 
+    .btn-dona {
+      order: 2; /* Va sotto */
+    }
+    .btn-burger {
+      order: 1; /* Va sopra */
+      
+    }
+    
+  
 
   .modal-dialog {
     
@@ -401,30 +416,8 @@ footer.footer-custom.home-footer {
     margin-bottom: 35px;
   }
 
-  /* Bottoni in colonna */
-  .navbar .d-flex.flex-column {
-    flex-direction: column !important;
-    gap: 6px;
-    flex-direction: row !important;
-    align-items: flex-end !important;
-  }
 
-  .btn-primary {
-    width: 100% !important;
-    font-size: 17px !important;
-    height: 40px !important; 
-  }
-
-
-  .btn-outline-primary {
-    width: 60% !important;
-    font-size: 17px !important;
-    margin-top: 0px;
-    font-size: 17px !important;
-    height: 60px !important;
-    padding-top: 6px !important;
-    border-radius: 15px;
-  }
+ 
 
   .btn-outline-primary svg {
     width: 40px;
@@ -464,18 +457,18 @@ footer.footer-custom.home-footer {
   /* Footer immagini disattivate su mobile */
  
   .footer-image2 {
-    max-width: 370px !important; 
+    max-width: 500px !important; 
     height: 50px !important;
-    left: 400px !important;
+    left: 630px !important;
     transform: translateX(-50%) !important;
     position: relative !important; 
     
   }
 
   .footer-image {
-    max-width: 370px !important; 
+    max-width: 500px !important; 
     height: 50px !important;
-    left: 36px !important;
+    left: 130px !important;
     transform: translateX(-50%) !important;
     position: relative; 
     top: 50px;
@@ -492,14 +485,14 @@ footer.footer-custom.home-footer {
     width: 300px !important;
     height: 100px !important;
     top: 83px !important;
-    left: 370px !important;
+    left: 440px !important;
     transform: none !important;
     
   }
 
   .floating-image{
     position: absolute !important;
-    width: 370px !important;
+    width: 440px !important;
     height: 100px !important;
     top: 83px !important;
     left: 0px !important;
@@ -567,3 +560,132 @@ footer.footer-custom.home-footer {
 
 }
   
+@media (max-width: 767px) and (orientation: landscape) {
+  .mobile-landscape-layout {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    gap: 1rem;
+    width: 100%;
+    overflow-x: auto;
+    align-items: flex-start !important;
+   
+  }
+
+  
+  .mobile-menu-separator {
+    width: 510%;
+    height: 1px;
+    background: rgba(0,0,0,0.15);
+    box-shadow: 0 2px 2px rgba(0,0,0,0.1);
+
+  }
+
+
+  .mobile-landscape-layout > div {
+    flex: 1 1 20%;
+    min-width: 150px;
+    display: flex;
+    flex-direction: column; /* colonna verticale */
+  }
+
+  .mobile-landscape-layout h5 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #2B2B85;
+    margin-bottom: 10px;
+    text-align: left;
+    
+    
+  }
+
+  .mobile-landscape-layout .nav {
+    align-items: flex-start;
+  }
+
+  .mobile-landscape-layout .custom-nav-link {
+    text-align: left !important;
+    font-size: 14px;
+    margin-bottom: 5px;
+  }
+  .custom-modal-width  {
+    width: 100% !important;        
+    max-width: none !important;  
+    padding: 1.5rem 2rem !important; /* più spazio interno */
+    display: flex !important;
+    justify-content: center !important;
+    overflow-x: auto;
+    overflow-y: auto;
+  }
+  .mobile-landscape-layout {
+    width: 100% !important;
+    gap: 1.5rem !important;     
+    flex-wrap: nowrap !important; 
+    
+    height: 370px;
+  }
+  .mobile-landscape-layout h5 {
+    font-size: 23px !important;
+  }
+
+ 
+  .mobile-landscape-layout .nav-link,
+  .mobile-landscape-layout .custom-nav-link {
+    font-size: 19px !important; /* forza la dimensione */
+    text-align: left !important;
+    width: 100%;
+   
+  }
+
+  .col-incontrho h5,
+  .col-sostienici h5,
+  .col-news h5, 
+  .col-campagne h5 {
+    margin-top: 27px;
+  }
+
+  .col-campagne h5 {
+    margin-left: -50px;
+  }
+  .col-news .nav {
+    margin-left: 25px;
+    
+  }
+
+  .col-incontrho .nav,
+  .col-sostienici .nav,
+  .col-news .nav,
+  .col-campagne .nav,
+  .col-cosa-facciamo .nav{
+    margin-top: 15px;
+  }
+
+
+  .modal-title {
+    margin-bottom: -10px; 
+    margin-top: -10px;
+    padding-top: 20px;
+  }
+  .navbar .d-flex.flex-column {
+    flex-direction: column !important; /* rimane colonna */
+    gap: 6px;
+    align-items: flex-end !important;
+    margin-top: 15px;
+    
+  }
+  
+  .btn-dona { 
+    order: 2 !important; 
+    margin-right: 80px;
+    width: 100px !important;
+    margin-top: -56px;
+  }  
+  .btn-burger { 
+    order: 1 !important; 
+  
+  } 
+}
+ 
+
+

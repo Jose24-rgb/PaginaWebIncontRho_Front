@@ -82,8 +82,8 @@ function App() {
 
           {/* Bottoni */}
           <div className="d-flex flex-column flex-md-row align-items-center me-2 me-md-4" style={{ position: 'relative', zIndex: 2 }}>
-            <Button variant="primary" className="mb-2 mb-md-0 me-md-3 w-100 w-md-auto">Dona Ora</Button>
-            <Button variant="outline-primary" onClick={handleShow} className="d-flex align-items-center justify-content-center">
+            <Button variant="primary" className="btn-dona mb-2 mb-md-0 me-md-3 w-100 w-md-auto">Dona Ora</Button>
+            <Button variant="outline-primary" onClick={handleShow} className=".btn-burger d-flex align-items-center justify-content-center">
               <svg xmlns="http://www.w3.org/2000/svg" width="100" height="30" viewBox="0 0 100 40">
                 <rect y="-15" width="100" height="4" fill="currentColor"/>
                 <rect y="10" width="100" height="4" fill="currentColor"/>
@@ -100,7 +100,7 @@ function App() {
           <Modal.Title>Menu</Modal.Title>
         </Modal.Header>
         <Modal.Body>
-          <Container className="py-4">
+          <Container className="py-4 ">
 
             {/* VERSIONE DESKTOP */}
             <div className="d-none d-md-block">
@@ -180,50 +180,64 @@ function App() {
               </Row>
             </div>
 
-            {/* VERSIONE MOBILE */}
-            <div className="d-block d-md-none">
-              {/* IncontRho */}
-              <h5 className="fw-bold mb-2 text-primary">IncontRho</h5>
-              <Nav className="flex-column mb-3">
-                <Nav.Link as={Link} to="/accoglienza-e-ascolto" onClick={handleClose}>Contatti e sedi locali</Nav.Link>
-                <Nav.Link as={Link} to="/visione-missione" onClick={handleClose}>Visione e Missione</Nav.Link>
-                <Nav.Link as={Link} to="/trasparenza" onClick={handleClose}>Trasparenza e Governance</Nav.Link>
-                <Nav.Link as={Link} to="/la-carta-dei-servizi" onClick={handleClose}>La Carta dei Servizi</Nav.Link>
-              </Nav>
-              <div className="menu-titles-separator mb-3"></div>
+            <div className="d-block d-md-none mobile-menu">
+  <div className="mobile-landscape-layout">
 
-              {/* Cosa Facciamo */}
-              <h5 className="fw-bold mb-2 text-primary">Cosa Facciamo</h5>
-              <Nav className="flex-column mb-3">
-                <Nav.Link as={Link} to="/progetti-e-attivita" onClick={handleClose}>Progetti e Attività</Nav.Link>
-                <Nav.Link as={Link} to="/programmi-di-formazione" onClick={handleClose}>Programmi Formazione</Nav.Link>
-                <Nav.Link as={Link} to="/sostegno-al-recupero" onClick={handleClose}>Sostegno al Recupero</Nav.Link>
-              </Nav>
-              <div className="menu-titles-separator mb-3"></div>
+    {/* LINEA SEPARATRICE UNICA SOTTO I TITOLI */}
+   
 
-              {/* Sostienici */}
-              <h5 className="fw-bold mb-2 text-primary">Sostienici</h5>
-              <Nav className="flex-column mb-3">
-                <Nav.Link as={Link} to="/il-tuo-supporto-per-incontrho" onClick={handleClose}>Il Tuo Supporto</Nav.Link>
-                <Nav.Link as={Link} to="/partnership-e-collaborazioni" onClick={handleClose}>Partnership e Collaborazioni</Nav.Link>
-                <Nav.Link as={Link} to="/benefici-fiscali-delle-donazioni" onClick={handleClose}>Benefici Fiscali</Nav.Link>
-                <Nav.Link as={Link} to="/unisciti-al-nostro-volontariato" onClick={handleClose}>Unisciti al Volontariato</Nav.Link>
-                <Nav.Link as={Link} to="/unisciti-al-nostro-attivismo" onClick={handleClose}>Unisciti all’Attivismo</Nav.Link>
-              </Nav>
-              <div className="menu-titles-separator mb-3"></div>
+    {/* Colonna IncontRho */}
+    <div className="col-incontrho">
+      <h5>IncontRho</h5>
+      <div className="mobile-menu-separator"></div>
+      <Nav className="flex-column">
+        <Nav.Link as={Link} to="/accoglienza-e-ascolto" onClick={handleClose}>Contatti e <br /> sedi locali</Nav.Link>
+        <Nav.Link as={Link} to="/visione-missione" onClick={handleClose}>Visione e Missione</Nav.Link>
+        <Nav.Link as={Link} to="/trasparenza" onClick={handleClose}>Trasparenza e Governance</Nav.Link>
+        <Nav.Link as={Link} to="/la-carta-dei-servizi" onClick={handleClose}>La Carta dei Servizi</Nav.Link>
+      </Nav>
+    </div>
 
-              <h5 className="fw-bold mb-2 text-primary">News</h5>
-<Nav className="flex-column mb-3">
-  <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
-</Nav>
-<div className="menu-titles-separator mb-3"></div>
+    {/* Colonna Cosa Facciamo */}
+    <div className="col-cosa-facciamo">
+      <h5>Cosa Facciamo</h5>
+      <Nav className="flex-column">
+        <Nav.Link as={Link} to="/progetti-e-attivita" onClick={handleClose}>Progetti e <br />  Attività</Nav.Link>
+        <Nav.Link as={Link} to="/programmi-di-formazione" onClick={handleClose}>Programmi Formazione</Nav.Link>
+        <Nav.Link as={Link} to="/sostegno-al-recupero" onClick={handleClose}>Sostegno al Recupero</Nav.Link>
+      </Nav>
+    </div>
 
-{/* Campagne */}
-<h5 className="fw-bold mb-2 text-primary">Campagne</h5>
-<Nav className="flex-column">
-  <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
-</Nav>
-            </div>
+    {/* Colonna Sostienici */}
+    <div className="col-sostienici">
+      <h5>Sostienici</h5>
+      <Nav className="flex-column">
+        <Nav.Link as={Link} to="/il-tuo-supporto-per-incontrho" onClick={handleClose}>Il Tuo Supporto per IncontRho</Nav.Link>
+        <Nav.Link as={Link} to="/partnership-e-collaborazioni" onClick={handleClose}>Partnership e Collaborazioni</Nav.Link>
+        <Nav.Link as={Link} to="/benefici-fiscali-delle-donazioni" onClick={handleClose}>Benefici Fiscali delle Donazionii</Nav.Link>
+        <Nav.Link as={Link} to="/unisciti-al-nostro-volontariato" onClick={handleClose}>Unisciti al Nostro Volontariato</Nav.Link>
+        <Nav.Link as={Link} to="/unisciti-al-nostro-attivismo" onClick={handleClose}>Unisciti al Nostro Attivismo</Nav.Link>
+      </Nav>
+    </div>
+
+    {/* Colonna News */}
+    <div className="col-news">
+      <h5>News</h5>
+      <Nav className="flex-column">
+        <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+      </Nav>
+    </div>
+
+    {/* Colonna Campagne */}
+    <div className="col-campagne">
+      <h5>Campagne</h5>
+      <Nav className="flex-column">
+        <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+      </Nav>
+    </div>
+
+  </div>
+</div>
 
           </Container>
         </Modal.Body>
