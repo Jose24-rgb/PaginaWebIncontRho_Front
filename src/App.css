@@ -352,31 +352,38 @@ footer.footer-custom.home-footer {
 
   /* Navbar logo più piccolo */
   .navbar-logo {
-    height: 150px;
+    height: 125px;
+    margin-top: -10px;
+    margin-bottom: 35px;
   }
 
   /* Bottoni in colonna */
   .navbar .d-flex.flex-column {
     flex-direction: column !important;
-    gap: 10px;
+    gap: 6px;
+    flex-direction: row !important;
   }
 
-  .btn-primary,
-  .btn-outline-primary {
+  .btn-primary {
     width: 100% !important;
-    font-size: 20px !important;
+    font-size: 17px !important;
+    height: 40px !important; 
   }
 
+
   .btn-outline-primary {
-    width: 75% !important;
-    font-size: 20px !important;
-    margin-top: 10px;
-    margin-left: 30px;
+    width: 60% !important;
+    font-size: 17px !important;
+    margin-top: 0px;
+    font-size: 17px !important;
+    height: 60px !important;
+    padding-top: 6px !important;
+    border-radius: 15px;
   }
 
   .btn-outline-primary svg {
     width: 40px;
-    height: 35px;
+    height: 30px;
   }
 
   /* Modal più compatto */
@@ -416,21 +423,27 @@ footer.footer-custom.home-footer {
     height: 50px !important;
     left: 50% !important;
     transform: translateX(-50%) !important;
-    position: relative !important; /* non assolute, così restano nel flusso */
+    position: relative !important; 
   }
 
-  .floating-image,
   .floating-image2 {
+    position: absolute !important;
+    width: 300px !important;
+    height: 100px !important;
+    top: 83px !important;
+    left: 280px !important;
+    transform: none !important;
     
   }
 
   .floating-image{
     position: absolute !important;
     width: 350px !important;
-    height: auto !important;
-    top: 30px !important;
-    left: 10px !important;
+    height: 100px !important;
+    top: 83px !important;
+    left: -70px !important;
     transform: none !important;
+ 
   }
   footer.footer-custom {
     font-size: 1rem !important;
@@ -438,34 +451,40 @@ footer.footer-custom.home-footer {
   }
 
   .bg-light.py-2.border-bottom .top-bar-text {
-    font-size: 20px !important;
+    font-size: 17px !important;
     text-align: left !important;
+    margin-left: -100px;
+    margin-bottom: -5px;
   }
 
   .info-bar .top-bar-text:first-child {
     display: block !important;   /* tutto il blocco è su una riga */
     white-space: nowrap !important; /* impedisce l'andata a capo */
-    margin-bottom: 6px !important;
+    margin-bottom: 1px !important;
   }
 
   .info-bar .top-bar-text:first-child span {
     display: inline !important; 
+    
  
   }
   
   .info-bar .top-bar-text:first-child span {
-    font-size: 20px !important; 
+    font-size: 17px !important; 
   }
 
   .info-bar .top-bar-text:last-child a {
-    font-size: 20px !important; 
+    font-size: 17px !important; 
   }
 
 
   .info-bar .top-bar-text:last-child {
     display: block !important;
-  
     
+  }
+
+  .info-bar .top-bar-link.fw-bold.text-primary {
+    font-size: 17px !important;
   }
 
   .navbar-brand,
