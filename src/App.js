@@ -173,7 +173,7 @@ function App() {
                 {[4,5].map(i => (
                   <Col xs={12} sm={6} md={4} lg key={i} className="mb-3 links-col-empty">
                     <Nav className="flex-column align-items-center align-items-md-start">
-                      <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+                      <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}></span>
                     </Nav>
                   </Col>
                 ))}
@@ -191,21 +191,33 @@ function App() {
       <h5>IncontRho</h5>
       <div className="mobile-menu-separator"></div>
       <Nav className="flex-column">
-        <Nav.Link as={Link} to="/accoglienza-e-ascolto" onClick={handleClose}>Contatti e <br /> sedi locali</Nav.Link>
+      <Nav.Link 
+  as={Link} 
+  to="/accoglienza-e-ascolto" 
+  className="custom-nav-link no-wrap" 
+  onClick={handleClose}
+>Contatti e <span className="wrap-sedi"> sedi locali</span></Nav.Link>
         <Nav.Link as={Link} to="/visione-missione" onClick={handleClose}>Visione e Missione</Nav.Link>
         <Nav.Link as={Link} to="/trasparenza" onClick={handleClose}>Trasparenza e Governance</Nav.Link>
         <Nav.Link as={Link} to="/la-carta-dei-servizi" onClick={handleClose}>La Carta dei Servizi</Nav.Link>
       </Nav>
+      <div className="mobile-menu-separator1"></div>
     </div>
 
     {/* Colonna Cosa Facciamo */}
     <div className="col-cosa-facciamo">
       <h5>Cosa Facciamo</h5>
       <Nav className="flex-column">
-        <Nav.Link as={Link} to="/progetti-e-attivita" onClick={handleClose}>Progetti e <br />  Attività</Nav.Link>
+        <Nav.Link as={Link} to="/progetti-e-attivita" 
+  className="custom-nav-link mobile-single-line" 
+  onClick={handleClose}
+>
+  Progetti e <span className="wrap-attivita">Attività</span>
+</Nav.Link>
         <Nav.Link as={Link} to="/programmi-di-formazione" onClick={handleClose}>Programmi Formazione</Nav.Link>
         <Nav.Link as={Link} to="/sostegno-al-recupero" onClick={handleClose}>Sostegno al Recupero</Nav.Link>
       </Nav>
+      <div className="mobile-menu-separator2"></div>
     </div>
 
     {/* Colonna Sostienici */}
@@ -218,22 +230,25 @@ function App() {
         <Nav.Link as={Link} to="/unisciti-al-nostro-volontariato" onClick={handleClose}>Unisciti al Nostro Volontariato</Nav.Link>
         <Nav.Link as={Link} to="/unisciti-al-nostro-attivismo" onClick={handleClose}>Unisciti al Nostro Attivismo</Nav.Link>
       </Nav>
+      <div className="mobile-menu-separator3"></div>
     </div>
 
     {/* Colonna News */}
     <div className="col-news">
       <h5>News</h5>
       <Nav className="flex-column">
-        <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+        <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}></span>
       </Nav>
+      <div className="mobile-menu-separator4"></div>
     </div>
 
     {/* Colonna Campagne */}
     <div className="col-campagne">
       <h5>Campagne</h5>
       <Nav className="flex-column">
-        <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+        <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}></span>
       </Nav>
+      <div className="mobile-menu-separator5"></div>
     </div>
 
   </div>
