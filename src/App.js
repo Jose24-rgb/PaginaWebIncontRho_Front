@@ -76,8 +76,9 @@ function App() {
           </Navbar.Brand>
 
           {/* Nuove immagini dietro */}
-          <img src={NuovaFoto} alt="Nuova Foto" className="floating-image img-fluid d-none d-md-block" />
-          <img src={NuovaFoto2} alt="Nuova Foto" className="floating-image2 img-fluid d-none d-md-block" />
+          <img src={NuovaFoto} alt="Nuova Foto" className="floating-image img-fluid" />
+<img src={NuovaFoto2} alt="Nuova Foto" className="floating-image2 img-fluid" />
+
 
           {/* Bottoni */}
           <div className="d-flex flex-column flex-md-row align-items-center me-2 me-md-4" style={{ position: 'relative', zIndex: 2 }}>
