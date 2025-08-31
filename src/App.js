@@ -101,80 +101,130 @@ function App() {
         </Modal.Header>
         <Modal.Body>
           <Container className="py-4">
-            {/* Titoli */}
-            <Row className="gy-4 text-center text-md-start">
-              {["IncontRho","Cosa Facciamo","Sostienici","News","Campagne"].map((title, i) => (
-                <Col xs={12} sm={6} md={4} lg key={i}>
-                  <h5 className="fw-bold mb-2 text-primary modal-column-title">{title}</h5>
-                </Col>
-              ))}
-            </Row>
 
-            <div className="menu-titles-separator mb-4"></div>
+            {/* VERSIONE DESKTOP */}
+            <div className="d-none d-md-block">
+              {/* Titoli */}
+              <Row className="gy-4 text-center text-md-start">
+                {["IncontRho","Cosa Facciamo","Sostienici","News","Campagne"].map((title, i) => (
+                  <Col xs={12} sm={6} md={4} lg key={i}>
+                    <h5 className="fw-bold mb-2 text-primary modal-column-title">{title}</h5>
+                  </Col>
+                ))}
+              </Row>
 
-            {/* Link */}
-            <Row className="gy-4 text-center text-md-start">
-              <Col xs={12} sm={6} md={4} lg className="mb-3 links-col-1">
-                <Nav className="flex-column align-items-center align-items-md-start">
-                  <Nav.Link as={Link} to="/accoglienza-e-ascolto" className="custom-nav-link" onClick={handleClose}>
-                    Contatti e <br /> sedi locali
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/visione-missione" className="custom-nav-link" onClick={handleClose}>
-                    Visione e Missione
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/trasparenza" className="custom-nav-link" onClick={handleClose}>
-                    Trasparenza e Governance
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/la-carta-dei-servizi" className="custom-nav-link" onClick={handleClose}>
-                    La Carta dei Servizi
-                  </Nav.Link>
-                </Nav>
-              </Col>
+              <div className="menu-titles-separator mb-4"></div>
 
-              <Col xs={12} sm={6} md={4} lg className="mb-3 links-col-2">
-                <Nav className="flex-column align-items-center align-items-md-start">
-                  <Nav.Link as={Link} to="/progetti-e-attivita" className="custom-nav-link" onClick={handleClose}>
-                    Progetti e Attività
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/programmi-di-formazione" className="custom-nav-link" onClick={handleClose}>
-                    Programmi Formazione
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/sostegno-al-recupero" className="custom-nav-link" onClick={handleClose}>
-                    <span style={{display: 'block'}}>Sostegno al</span>
-                    <span style={{display: 'block'}}>Recupero</span>
-                  </Nav.Link>
-                </Nav>
-              </Col>
-
-              <Col xs={12} sm={6} md={4} lg className="mb-3 links-col-3">
-                <Nav className="flex-column align-items-center align-items-md-start">
-                  <Nav.Link as={Link} to="/il-tuo-supporto-per-incontrho" className="custom-nav-link" onClick={handleClose}>
-                    Il Tuo Supporto per IncontRho
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/partnership-e-collaborazioni" className="custom-nav-link" onClick={handleClose}>
-                    Partnership e Collaborazioni
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/benefici-fiscali-delle-donazioni" className="custom-nav-link" onClick={handleClose}>
-                    Benefici Fiscali delle Donazioni
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/unisciti-al-nostro-volontariato" className="custom-nav-link" onClick={handleClose}>
-                    Unisciti al Nostro Volontariato
-                  </Nav.Link>
-                  <Nav.Link as={Link} to="/unisciti-al-nostro-attivismo" className="custom-nav-link" onClick={handleClose}>
-                    Unisciti al Nostro Attivismo
-                  </Nav.Link>
-                </Nav>
-              </Col>
-
-              {/* Colonne vuote */}
-              {[4,5].map(i => (
-                <Col xs={12} sm={6} md={4} lg key={i} className="mb-3 links-col-empty">
+              {/* Link */}
+              <Row className="gy-4 text-center text-md-start">
+                <Col xs={12} sm={6} md={4} lg className="mb-3 links-col-1">
                   <Nav className="flex-column align-items-center align-items-md-start">
-                    <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+                    <Nav.Link as={Link} to="/accoglienza-e-ascolto" className="custom-nav-link" onClick={handleClose}>
+                      Contatti e <br /> sedi locali
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/visione-missione" className="custom-nav-link" onClick={handleClose}>
+                      Visione e Missione
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/trasparenza" className="custom-nav-link" onClick={handleClose}>
+                      Trasparenza e Governance
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/la-carta-dei-servizi" className="custom-nav-link" onClick={handleClose}>
+                      La Carta dei Servizi
+                    </Nav.Link>
                   </Nav>
                 </Col>
-              ))}
-            </Row>
+
+                <Col xs={12} sm={6} md={4} lg className="mb-3 links-col-2">
+                  <Nav className="flex-column align-items-center align-items-md-start">
+                    <Nav.Link as={Link} to="/progetti-e-attivita" className="custom-nav-link" onClick={handleClose}>
+                      Progetti e Attività
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/programmi-di-formazione" className="custom-nav-link" onClick={handleClose}>
+                      Programmi Formazione
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/sostegno-al-recupero" className="custom-nav-link" onClick={handleClose}>
+                      <span style={{display: 'block'}}>Sostegno al</span>
+                      <span style={{display: 'block'}}>Recupero</span>
+                    </Nav.Link>
+                  </Nav>
+                </Col>
+
+                <Col xs={12} sm={6} md={4} lg className="mb-3 links-col-3">
+                  <Nav className="flex-column align-items-center align-items-md-start">
+                    <Nav.Link as={Link} to="/il-tuo-supporto-per-incontrho" className="custom-nav-link" onClick={handleClose}>
+                      Il Tuo Supporto per IncontRho
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/partnership-e-collaborazioni" className="custom-nav-link" onClick={handleClose}>
+                      Partnership e Collaborazioni
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/benefici-fiscali-delle-donazioni" className="custom-nav-link" onClick={handleClose}>
+                      Benefici Fiscali delle Donazioni
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/unisciti-al-nostro-volontariato" className="custom-nav-link" onClick={handleClose}>
+                      Unisciti al Nostro Volontariato
+                    </Nav.Link>
+                    <Nav.Link as={Link} to="/unisciti-al-nostro-attivismo" className="custom-nav-link" onClick={handleClose}>
+                      Unisciti al Nostro Attivismo
+                    </Nav.Link>
+                  </Nav>
+                </Col>
+
+                {/* Colonne vuote */}
+                {[4,5].map(i => (
+                  <Col xs={12} sm={6} md={4} lg key={i} className="mb-3 links-col-empty">
+                    <Nav className="flex-column align-items-center align-items-md-start">
+                      <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+                    </Nav>
+                  </Col>
+                ))}
+              </Row>
+            </div>
+
+            {/* VERSIONE MOBILE */}
+            <div className="d-block d-md-none">
+              {/* IncontRho */}
+              <h5 className="fw-bold mb-2 text-primary">IncontRho</h5>
+              <Nav className="flex-column mb-3">
+                <Nav.Link as={Link} to="/accoglienza-e-ascolto" onClick={handleClose}>Contatti e sedi locali</Nav.Link>
+                <Nav.Link as={Link} to="/visione-missione" onClick={handleClose}>Visione e Missione</Nav.Link>
+                <Nav.Link as={Link} to="/trasparenza" onClick={handleClose}>Trasparenza e Governance</Nav.Link>
+                <Nav.Link as={Link} to="/la-carta-dei-servizi" onClick={handleClose}>La Carta dei Servizi</Nav.Link>
+              </Nav>
+              <div className="menu-titles-separator mb-3"></div>
+
+              {/* Cosa Facciamo */}
+              <h5 className="fw-bold mb-2 text-primary">Cosa Facciamo</h5>
+              <Nav className="flex-column mb-3">
+                <Nav.Link as={Link} to="/progetti-e-attivita" onClick={handleClose}>Progetti e Attività</Nav.Link>
+                <Nav.Link as={Link} to="/programmi-di-formazione" onClick={handleClose}>Programmi Formazione</Nav.Link>
+                <Nav.Link as={Link} to="/sostegno-al-recupero" onClick={handleClose}>Sostegno al Recupero</Nav.Link>
+              </Nav>
+              <div className="menu-titles-separator mb-3"></div>
+
+              {/* Sostienici */}
+              <h5 className="fw-bold mb-2 text-primary">Sostienici</h5>
+              <Nav className="flex-column mb-3">
+                <Nav.Link as={Link} to="/il-tuo-supporto-per-incontrho" onClick={handleClose}>Il Tuo Supporto</Nav.Link>
+                <Nav.Link as={Link} to="/partnership-e-collaborazioni" onClick={handleClose}>Partnership e Collaborazioni</Nav.Link>
+                <Nav.Link as={Link} to="/benefici-fiscali-delle-donazioni" onClick={handleClose}>Benefici Fiscali</Nav.Link>
+                <Nav.Link as={Link} to="/unisciti-al-nostro-volontariato" onClick={handleClose}>Unisciti al Volontariato</Nav.Link>
+                <Nav.Link as={Link} to="/unisciti-al-nostro-attivismo" onClick={handleClose}>Unisciti all’Attivismo</Nav.Link>
+              </Nav>
+              <div className="menu-titles-separator mb-3"></div>
+
+              <h5 className="fw-bold mb-2 text-primary">News</h5>
+<Nav className="flex-column mb-3">
+  <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+</Nav>
+<div className="menu-titles-separator mb-3"></div>
+
+{/* Campagne */}
+<h5 className="fw-bold mb-2 text-primary">Campagne</h5>
+<Nav className="flex-column">
+  <span className="custom-nav-link" style={{ cursor: 'default', color: '#6d6dec' }}>-</span>
+</Nav>
+            </div>
+
           </Container>
         </Modal.Body>
       </Modal>
