@@ -1,0 +1,39 @@
+.container.my-5 > h1.text-center.mb-4.text-primary {
+    font-size: 55px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #2B2B85 !important;
+    white-space: nowrap;
+    margin-bottom: 26px !important;
+}
+
+.container.my-5 > section.mb-5.p-4.border.rounded.shadow-sm.bg-light > h3.text-primary.mb-3 {
+    font-size: 43px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    color: #2B2B85 !important;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+.container.my-5 > section.mb-5.p-4.border.rounded.shadow-sm.bg-light > h2.text-secondary.mb-3 {
+    font-size: 43px !important;
+    margin-top: 0 !important;
+    margin-bottom: 0.5rem !important;
+    color: #2B2B85 !important;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+/* Selettore molto specifico per il footer del sostegno al recupero */
+div.text-center.mt-4 > p.sostegno-footer {
+    font-size: 27px !important;
+  color: #2B2B85 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  font-weight: bold !important;
+  }
+  
+  

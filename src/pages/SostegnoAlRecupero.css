@@ -1,0 +1,30 @@
+/* Stile per tutti i titoli di sezione nella pagina SostegnoAlRecupero */
+.sostegno-al-recupero h2,
+.sostegno-al-recupero h3 {
+    font-size: 43px !important;
+    margin-top: 0.0rem !important;
+    margin-bottom: 0.5rem !important;
+    color: #2B2B85 !important;
+    padding-left: 0;
+    margin-left: 0;
+    text-align: left;
+}
+
+/* Titolo principale della pagina SostegnoAlRecupero */
+.sostegno-al-recupero-title {
+    font-size: 55px !important;
+    font-weight: bold !important;
+    text-transform: uppercase !important;
+    color: #2B2B85 !important;
+  }
+  
+
+  /* Paragrafo finale della pagina SostegnoAlRecupero */
+  .text-center.mt-4 > .sostegno-al-recupero-footer{
+    font-size: 27px !important;
+    color: #2B2B85 !important;
+    text-align: center !important;
+    line-height: 1.2 !important;
+    font-weight: bold !important;
+  }
+  

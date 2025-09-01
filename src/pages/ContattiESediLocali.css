@@ -1,0 +1,130 @@
+.contatti-container p {
+  font-size: 24px !important;
+  line-height: 1.6 !important;
+  color: #2B2B85 !important;
+  line-height: 1.2 !important;
+  
+}
+
+.contatti-container li {
+  font-size: 2px !important;
+  line-height: 1.5 !important;
+}
+
+.text-primary,
+.text-secondary {
+  color: #2B2B85 !important;
+}
+
+.bg-light {
+  background-color: #fac460 !important;
+  border: 1px solid #2B2B85 !important;
+  border-bottom: 3px solid #2B2B85 !important;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important; 
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 43px !important;
+}
+
+.titolo-contatti {
+  font-size: 55px !important;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.titolo-accoglienza {
+  font-size: 43px !important;
+}
+
+.info-accesso ul {
+  list-style: inside !important;
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+  margin-top: 1rem !important;
+}
+
+.info-accesso ul li {
+  padding-left: 0 !important;
+  text-indent: 0 !important;
+  margin-bottom: 0.8rem !important;
+}
+
+.info-accesso {
+  color: #2B2B85 !important;
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+  text-align: left;
+  background-color: #fac460 !important;
+  padding: 1.5rem !important;
+  border-radius: 0.3rem !important;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+  margin-bottom: 3rem !important;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.info-accesso h3 {
+  font-size: 43px !important;
+  margin-top: 1.5rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #2B2B85 !important;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
+}
+
+.info-accesso a {
+  color: #2B2B85 !important;
+  text-decoration: underline;
+}
+
+#sezioni-mappe {
+  padding: 1.5rem !important;
+  border-radius: 0.3rem !important;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); 
+  color: #2B2B85 !important;
+  background-color: rgba(128, 128, 128, 0.267) (206, 206, 204, 0.897) !important;
+  border: 1px solid #2B2B85 !important;
+  border-bottom: 3px solid #2B2B85 !important;
+}
+
+#sezioni-mappe h2 {
+  color: #2B2B85 !important;
+  font-size: 43px !important;
+  margin-bottom: 1.5rem !important;
+}
+
+#sezioni-mappe .card {
+  background-color: #fac460 !important;
+  border: 1px solid #2B2B85;
+  border-bottom: 3px solid #2B2B85 !important;
+  box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1) !important; 
+}
+
+#sezioni-mappe .card .card-title {
+  color: #2B2B85 !important;
+  font-size: 28px;
+}
+
+.seguici-label {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section.bg-light ul {
+  padding-left: 0rem !important; /* distanza dal bordo sinistro */
+  margin-left: 0 !important;     /* rimuove margine aggiuntivo */
+  list-style-position: inside !important; /* fa partire i bullet dall’inizio */
+}
+
+section.bg-light ul li {
+  margin-bottom: 0.1rem !important; /* distanza tra i punti */
+ 
+}
+
+
+h3.modalita-accesso-title {
+  margin-top: 0rem !important;  /* aumenta lo spazio superiore */
+}
+

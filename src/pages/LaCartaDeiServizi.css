@@ -1,0 +1,127 @@
+/* LaCartaDeiServizi.css */
+
+/* Colori e titoli principali */
+h1, h2, h3, h4, h5, h6,
+.text-primary,
+.text-secondary {
+  color: #2B2B85 !important; 
+}
+
+h3, h4, h5, h6 {
+  font-size: 24px !important;
+}
+
+h1, h2 {
+  font-size: 43px !important;
+}
+
+section.bg-light h1,
+section.bg-light h2,
+h1.text-primary,
+h2.text-secondary {
+  font-size: 43px !important;
+}
+
+/* Testo generale */
+body,
+p,
+li,
+strong,
+a {
+  color: #2B2B85 !important; 
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+}
+
+/* Sfondo sezioni */
+.bg-light {
+  background-color: #fac460 !important;
+}
+
+/* Paragrafi nelle sezioni */
+section.bg-light p,
+div.bg-light p { 
+  text-align: left; 
+  margin-left: 0;   
+  padding-left: 0; 
+}
+
+/* Titoli nelle sezioni */
+section.bg-light h2,
+section.bg-light h3,
+div.bg-light h2 { 
+  text-align: left;
+  margin-left: 0; 
+  padding-left: 0;
+}
+
+/* Liste */
+section.bg-light ul,
+div.bg-light ul {
+  list-style-position: inside; 
+  padding-left: 1.5em; 
+  margin-left: 0px;
+  list-style-type: disc;
+  text-align: left;
+}
+
+section.bg-light li,
+div.bg-light li {
+  padding-left: 1.5em !important;
+  text-indent: -1.5em !important;
+  margin-bottom: 0.5em; 
+  color: #2B2B85 !important;
+  font-size: 24px !important;
+  line-height: 1.2 !important;
+  text-align: left;
+}
+
+/* Strong dentro paragrafi */
+section.bg-light p strong {
+  display: block; 
+  text-align: left; 
+  margin-left: 0;
+  padding-left: 0;
+}
+
+/* Paragrafo finale centrato */
+.text-center.mt-4 p {
+  text-align: center; 
+  font-size: 24px !important;
+  color: #2B2B85 !important;
+}
+
+/* Larghezza massima sezione */
+section.bg-light {
+  max-width: 900px;
+  margin: 0 auto; /* centra orizzontalmente */
+}
+
+/* Stile speciale per il paragrafo finale */
+.servizi-title {
+  font-size: 55px !important;
+  font-weight: bold !important;
+  text-transform: uppercase !important;
+  color: #2B2B85 !important;
+}
+
+.text-center.mt-4 p.servizi-final {
+  font-size: 27px !important;
+  color: #2B2B85 !important;
+  text-align: center !important;
+  line-height: 1.2 !important;
+  font-weight: bold !important;
+}
+
+
+/* Selettore specifico per il section della Carta dei Servizi */
+.servizi-h2 {
+  font-size: 43px !important;
+  margin-top: 0.0rem !important;
+  margin-bottom: 0.5rem !important;
+  color: #2B2B85 !important;
+  padding-left: 0;
+  margin-left: 0;
+  text-align: left;
+}
+
