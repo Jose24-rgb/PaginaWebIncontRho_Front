@@ -278,16 +278,18 @@ function App() {
 
       {/* Footer */}
       <footer className="footer-custom text-center py-3 text-secondary mt-5 shadow-sm">
-        <div>© {new Date().getFullYear()} Associazione IncontRho. Tutti i diritti riservati.</div>
-      </footer>
+  <div>
+    © {new Date().getFullYear()} Associazione IncontRho. Tutti i diritti riservati.
+  </div>
+</footer>
 
-      {/* Mostra solo nella Home */}
-      {location.pathname === "/" && (
-        <>
-          <img src={FooterImage} alt="Prato" className="footer-image img-fluid" />
-          <img src={FooterImage2} alt="Prato2" className="footer-image2 img-fluid" />
-        </>
-      )}
+{/* Mostra solo nella Home */}
+{location.pathname === "/" && (
+  <div className="footer-images">
+    <img src={FooterImage} alt="Prato" className="footer-image img-fluid" />
+    <img src={FooterImage2} alt="Prato2" className="footer-image2 img-fluid" />
+  </div>
+)}
     </div>
   );
 }
