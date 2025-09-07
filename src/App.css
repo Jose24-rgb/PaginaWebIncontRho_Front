@@ -322,6 +322,7 @@ footer.footer-custom.home-footer {
   z-index: 2;
 }
 
+
 .footer-image {
   position: absolute;     
   left: 600px;
@@ -334,15 +335,15 @@ footer.footer-custom.home-footer {
 }
 
 .footer-image2 {
-  position: absolute;     
-  left: 1790px;
-  transform: translateX(-50%);
-  width: 1200px;    
-  height: 170px;   
-  z-index: 0;      
+  position: absolute;
+  right: 0; 
   bottom: 0px;
-  container: flex;
+  width: 1200px;
+  height: 170px;   
+  z-index: 0;
+  
 }
+
 
 .mobile-menu {
   display: none;
@@ -625,6 +626,27 @@ footer.footer-custom.home-footer {
     align-items: flex-start !important;
    
   }
+
+
+
+  .footer-image{
+    position: relative; /* non absolute */
+    width: 100%;  /* occupano metà larghezza ciascuna */
+    height: 100%; /* proporzioni corrette */
+    margin-left: 70px
+  }
+
+  .footer-image2 {
+    position: relative; /* non absolute */
+    width: 100%;  /* occupano metà larghezza ciascuna */
+    height: 100%; /* proporzioni corrette */
+    margin-top: 60px;
+    margin-left: -500px !important;
+  }
+
+
+
+  
   .mobile-menu .wrap-sedi {
     display: inline-block;
     margin-bottom: 7px;
@@ -781,25 +803,38 @@ footer.footer-custom.home-footer {
   z-index: 0; 
   }
 
- .footer-image {
-    max-width: 900px !important; 
-    height: 120px !important;
-    left: 160px !important;
-    transform: translateX(-50%) !important;
-    position: relative; 
-    top: -10px;
-    margin-bottom: -100px;
-  }
+ footer.footer-custom {
+  background-color: #fac460 !important;
+  color: #2B2B85 !important;     
+  font-size: 2.0rem !important;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+/* contenitore delle immagini sotto al footer */
+.footer-images {
+  position: relative;
+  width: 100%;
+  height: 120px;   /* altezza delle immagini */
+  overflow: hidden;
+}
+
+/* immagini a sinistra e a destra */
+.footer-image,
+.footer-image2 {
+  position: absolute;
+  bottom: 0;
+  height: 120px;
+}
+
+.footer-image {
+  left: 250px;
 }
 
 .footer-image2 {
-    max-width: 900px !important; 
-    height: 120px !important;
-    left: 1060px !important;
-    transform: translateX(-50%) !important;
-    position: relative; 
-    top: -40px;
-    margin-bottom: -100px;
-  }
+  right: -200px;
+}
+}
 
 
