@@ -627,6 +627,25 @@ footer.footer-custom.home-footer {
    
   }
 
+  .floating-image{
+    position: absolute !important;
+    width: 450px !important;
+    height: 100px !important;
+    top: 83px !important;
+    left: 0px !important;
+    transform: none !important;
+ 
+  }
+
+  .floating-image2 {
+    position: absolute !important;
+    width: 310px !important;
+    height: 100px !important;
+    top: 83px !important;
+    left: 450px !important;
+    transform: none !important;
+  }
+
 
 
   .footer-image{
