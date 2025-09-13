@@ -597,12 +597,6 @@ footer.footer-custom.home-footer {
   font-size: 38px !important;  /* dimensione link verticale */
 }
 
-
-
-
-
-}
-
 .mobile-menu .no-wrap {
   
   font-size: 22px !important;
@@ -613,6 +607,12 @@ footer.footer-custom.home-footer {
   font-size: 22px !important;
   text-align: left;
 }
+
+
+
+}
+
+
   
 @media (max-width: 767px) and (orientation: landscape) {
   .mobile-landscape-layout {
@@ -780,6 +780,7 @@ footer.footer-custom.home-footer {
     order: 1 !important; 
   
   } 
+
 }
  
 @media (max-width: 1366px) {
@@ -796,7 +797,7 @@ footer.footer-custom.home-footer {
   .floating-image2 {
     position: absolute;
   top: px;                     
-  left: 754px;                    
+  left: 767px;                    
   transform: translate(-50%, -50%); 
   height: 430px;                
   width: 1200px;

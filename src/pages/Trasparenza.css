@@ -103,3 +103,25 @@ section.bg-light {
   font-weight: bold !important;
 }
 
+
+
+@media (max-width: 767px){
+  .container p,
+  .container ul,
+  .container li,
+  .container strong {
+    font-size: 25px !important;
+  }
+  section.mb-5 p {
+    font-size: 25px !important;
+  }
+
+  section.mb-5 ul,
+  section.mb-5 ul li {
+    font-size: 25px !important; /* dimensione desiderata */
+  
+  }
+
+
+ 
+  }

@@ -46,3 +46,31 @@
     margin-top: 2rem !important; /* spazio sopra il paragrafo */
   }
   
+
+  /* Solo per dispositivi mobili */
+@media (max-width: 767px) {
+  /* Titolo principale h1 */
+ 
+
+  /* Sottotitoli h2 */
+  .container h2.titolo-corsi {
+    font-size: 35px !important;
+    font-weight: 700 !important;
+  
+  }
+
+  /* Sottotitoli h3 */
+  .container h3.titolo-formazione-tempo-libero,
+  .container h3.titolo-formazione-territorio {
+    font-size: 35px !important;
+    font-weight: 700 !important;
+  }
+
+  /* Tutti i paragrafi */
+  .container section.mb-5.p-4.border.rounded.shadow-sm.bg-light p,
+  .container section.mb-5.p-4.border.rounded.shadow-sm.bg-light ul li,
+  .container section.mb-5.p-4.border.rounded.shadow-sm.bg-light .programmi-final {
+    font-size: 25px !important;  /* 25px come richiesto */
+  }
+
+}

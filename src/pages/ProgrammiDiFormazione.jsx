@@ -5,13 +5,34 @@ const ProgrammiDiFormazione = () => {
   
   return (
     <div className="container my-5">
-      <h1 className="titolo-programmi">Programmi di Formazione</h1>
+      <h1
+  className="text-center mb-4 text-primary titolo-trasparenza"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '44px', 'important'); // font-size mobile
+      el.style.setProperty('word-break', 'break-word', 'important'); // forza a capo
+      el.style.setProperty('white-space', 'normal', 'important'); // permette il wrap del testo
+    }
+  }}
+>Programmi di Formazione</h1>
 
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
       <h2 className="titolo-corsi">Corsi e Percorsi di Apprendimento per la Salute Mentale</h2>
-        <p>IncontRho offre e promuove programmi di formazione volti a sensibilizzare, informare e fornire strumenti pratici per affrontare il disagio psichico, sia per le famiglie e i caregiver, sia per la comunità in generale.</p>
-        <p>Crediamo che la conoscenza sia un passo fondamentale per ridurre lo stigma e migliorare il supporto alle persone con difficoltà psicologiche.</p>
+      <p
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '25px', 'important'); 
+    }
+  }}
+>IncontRho offre e promuove programmi di formazione volti a sensibilizzare, informare e fornire strumenti pratici per affrontare il disagio psichico, sia per le famiglie e i caregiver, sia per la comunità in generale.</p>
+<p
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '25px', 'important'); 
+    }
+  }}
+>Crediamo che la conoscenza sia un passo fondamentale per ridurre lo stigma e migliorare il supporto alle persone con difficoltà psicologiche.</p>
       </section>
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">

@@ -5,17 +5,46 @@ const Trasparenza = () => {
   
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-4 text-primary titolo-trasparenza">
-        Trasparenza e Governance
-      </h1>
+      <h1
+  className="text-center mb-4 text-primary titolo-trasparenza"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '44px', 'important'); // font-size mobile
+      el.style.setProperty('word-break', 'break-word', 'important'); // forza a capo
+      el.style.setProperty('white-space', 'normal', 'important'); // permette il wrap del testo
+    }
+  }}
+>
+  Trasparenza e Governance
+</h1>
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
-        <h2 className="text-secondary mb-3">I Nostri Portatori di Interesse</h2>
+      <h2
+  className="text-secondary mb-3"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '35px', 'important');
+      el.style.setProperty('font-weight', '700', 'important');
+    }
+  }}
+>
+  I Nostri Portatori di Interesse
+</h2>
         <p>L’associazione IncontRho è punto di incontro tra chi opera per attivare e strutturare le attività associative e chi vi affluisce tra i cittadini del territorio.</p>
       </section>
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
-        <h2 className="text-secondary mb-3">Organismi Associativi</h2>
+      <h2
+  className="text-secondary mb-3"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '35px', 'important'); // font-size 35px
+      el.style.setProperty('font-weight', '700', 'important'); // bold
+    }
+  }}
+>
+  Organismi Associativi
+</h2>
         <p><strong>Assemblea dei Soci:</strong> L’Assemblea è il massimo organo deliberante dell’Associazione.</p>
         <p><strong>Consiglio Direttivo:</strong> Composto da un massimo di 11 membri che durano in carica 3 anni:</p>
         <ul>
@@ -43,7 +72,18 @@ const Trasparenza = () => {
       </section>
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
-        <h2 className="text-secondary mb-3">Soggetti che fruiscono dei nostri servizi</h2>
+      <h2
+  className="text-secondary mb-3"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '35px', 'important'); // font-size 35px
+      el.style.setProperty('font-weight', '700', 'important'); // bold
+    }
+  }}
+>
+  Soggetti che fruiscono dei nostri servizi
+</h2>
+
         <ul>
           <li>Utenti dei servizi di psichiatria del DSM del Rhodense</li>
           <li>Persone affette da disagio psicologico accolte presso lo Sportello</li>

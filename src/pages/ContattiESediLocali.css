@@ -128,3 +128,95 @@ h3.modalita-accesso-title {
   margin-top: 0rem !important;  /* aumenta lo spazio superiore */
 }
 
+
+
+
+
+/* 📱 Stili per mobile */
+@media (max-width: 767px) {
+  /* Titoli principali più piccoli */
+
+  .titolo-accoglienza {
+    font-size: 35px !important;
+    font-weight: bold;
+  }
+
+  .info-accesso h3,
+  #sezioni-mappe h2 {
+    font-size: 35px !important;
+    font-weight: bold;
+  }
+
+  /* Testi più leggibili */
+  .contatti-container p,
+  .info-accesso,
+  .info-accesso ul li,
+  section.bg-light p,
+  section.bg-light ul li {
+    font-size: 25px !important;
+   
+  }
+
+
+
+  /* Card mappe più compatte */
+  #sezioni-mappe .card .card-title {
+    font-size: 25px !important;
+  }
+
+  #sezioni-mappe iframe {
+    height: 250px !important;
+  }
+
+ 
+ 
+  /* Bottone social */
+  .btn-lg {
+    font-size: 25px !important;
+    
+  }
+
+  section.bg-light:first-of-type .titolo-accoglienza {
+    font-size: 35px !important;
+    font-weight: bold;
+  }
+
+  .info-accesso a,
+  section.bg-light a,
+  #sezioni-mappe a {
+    word-break: break-word;
+    font-size: 25px !important;
+    
+  }
+
+  div.info-accesso ul li {
+    font-size: 25px !important;
+  }
+
+  .info-accesso h3 {
+    font-size: 35px !important;
+    font-weight: bold;
+   
+  }
+
+  .info-accesso p,
+.info-accesso strong {
+  font-size: 25px !important;
+}
+footer {
+  font-size: 14px !important;
+  padding: 0.8rem 0;
+}
+
+footer.footer-custom {
+ font-size: 25px !important;
+  
+}
+h1.titolo-contatti {
+  font-size: 44px !important;
+  
+}
+
+  
+}
+

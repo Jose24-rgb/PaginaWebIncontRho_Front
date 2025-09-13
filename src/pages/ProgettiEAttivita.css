@@ -80,3 +80,27 @@ ul li {
   margin-left: 0;
   text-align: left;
 }
+
+
+@media (max-width: 767px) {
+  /* Tutti gli h3 dentro il container del componente ProgettiEAttivita */
+  .container h3 {
+    font-size: 35px !important; /* imposta 35px per mobile */
+    font-weight: 700 !important; /* mantiene il grassetto */
+  }
+  .container section p,
+  .container section ul li {
+    font-size: 25px !important;
+  
+  }
+
+  .container section.mb-5.p-4.border.rounded.shadow-sm.bg-light p,
+  .container section.mb-5.p-4.border.rounded.shadow-sm.bg-light ul li {
+    font-size: 25px !important;   /* metti 25px come richiesto */
+  }
+
+  /* Paragrafo specifico: primo della prima sezione */
+  .container.my-5 section.mb-5.p-4.border.rounded.shadow-sm.bg-light:first-of-type p {
+    font-size: 25px !important; 
+  }
+}

@@ -5,12 +5,28 @@ const VisioneMissione = () => {
   
   return (
     <div className="container my-5">
-      <h1 className="text-center mb-4 text-primary titolo-contatti">
+      <h1
+  className="text-center mb-4 text-primary titolo-trasparenza"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '44px', 'important'); // font-size mobile
+      el.style.setProperty('white-space', 'normal', 'important'); // permette il wrap del testo
+    }
+  }}
+>
   La Nostra Visione e Missione
 </h1>
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
-        <h2 className="text-secondary mb-3">Principi Ispiratori</h2>
+      <h2
+  className="text-secondary mb-3"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '35px', 'important');
+      el.style.setProperty('font-weight', '700', 'important');
+    }
+  }}
+>Principi Ispiratori</h2>
         <p>L’Associazione IncontRho nasce nel 2001 per sostenere chi, nella vita, ha incontrato il dolore della mente in tutte le sue forme, disturbi passeggeri o patologie psichiatriche. Il sostegno è rivolto alle persone che ne soffrono e ai loro famigliari.</p>
         <p>IncontRho è un’associazione composta da: famiglie coinvolte nell’assistenza al disagio mentale; da chi è personalmente in cura; da volontari e cittadini di buona volontà; da formatori e specialisti.</p>
         <p>L’obiettivo dell’associazione è quello di sostenere persone e famiglie gravate dalla malattia mentale. IncontRho incoraggia le persone in cura e i cittadini più sensibili a frequentarsi e a trascorrere insieme momenti di svago e di crescita culturale.</p>
@@ -21,7 +37,15 @@ const VisioneMissione = () => {
       </section>
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
-        <h2 className="text-secondary mb-3">I Nostri Obiettivi</h2>
+      <h2
+  className="text-secondary mb-3"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '35px', 'important');
+      el.style.setProperty('font-weight', '700', 'important');
+    }
+  }}
+>I Nostri Obiettivi</h2>
         <ul>
           <li>
            Favorire <strong>il benessere</strong> delle persone con disagio psichico e/o psicologico, attraverso l’ascolto e l’accoglienza. La prima necessità in chi soffre è trovare ascolto e affidabilità per condividere le sue preoccupazioni e per trovare insieme una strada verso il benessere. IncontRho propone attività ricreative per le persone in cura, per le loro famiglie, per i cittadini amici dell’associazione.

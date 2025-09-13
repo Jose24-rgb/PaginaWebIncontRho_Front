@@ -125,3 +125,10 @@ section.bg-light {
   text-align: left;
 }
 
+@media (max-width: 767px){
+  .container .mb-5.p-4.border.rounded.shadow-sm.bg-light p{
+    font-size: 25px !important; /* imposta 25px per mobile */
+  }
+
+  }
+

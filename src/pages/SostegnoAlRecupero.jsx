@@ -11,7 +11,13 @@ const SostegnoAlRecupero = () => {
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
         <h2 className="text-secondary mb-3">Percorsi di Reintegrazione e Autonomia</h2>
-        <p>IncontRho supporta attivamente le persone con disagio psichico nel loro percorso di recupero e reintegrazione sociale. Il nostro obiettivo è favorire lo sviluppo delle autonomie personali e migliorare la qualità della vita, promuovendo l'inclusione e la partecipazione attiva nella comunità.</p>
+        <p
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '25px', 'important'); 
+    }
+  }}
+>IncontRho supporta attivamente le persone con disagio psichico nel loro percorso di recupero e reintegrazione sociale. Il nostro obiettivo è favorire lo sviluppo delle autonomie personali e migliorare la qualità della vita, promuovendo l'inclusione e la partecipazione attiva nella comunità.</p>
       </section>
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">

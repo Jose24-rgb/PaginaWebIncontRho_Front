@@ -106,3 +106,15 @@ div.text-center.mt-4 p.visione-final {
   font-weight: bold !important;
 }
 
+@media (max-width: 767px) {
+
+  .container section:first-of-type p,
+  .container section:nth-of-type(2) ul li,
+  .container .visione-final {
+    font-size: 25px !important;
+  }
+  
+
+
+ 
+}

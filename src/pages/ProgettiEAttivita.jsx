@@ -5,7 +5,16 @@ const ProgettiEAttivita = () => {
   
   return (
     <div className="container my-5">
-      <h1 className="progetti-title">Progetti e Attività</h1>
+      <h1
+  className="text-center mb-4 text-primary titolo-trasparenza"
+  ref={el => {
+    if (el && window.innerWidth <= 767) { // solo su mobile
+      el.style.setProperty('font-size', '44px', 'important'); // font-size mobile
+      el.style.setProperty('word-break', 'break-word', 'important'); // forza a capo
+      el.style.setProperty('white-space', 'normal', 'important'); // permette il wrap del testo
+    }
+  }}
+>Progetti e Attività</h1>
 
 
       <section className="mb-5 p-4 border rounded shadow-sm bg-light">
