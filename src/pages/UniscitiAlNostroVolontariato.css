@@ -67,3 +67,23 @@
   line-height: 1.2 !important;
   font-weight: bold !important;
 }
+
+@media (max-width: 767px) {
+  /* Titolo principale volontariato */
+  div.container.my-5 > h1.text-center.mb-4.text-primary {
+    font-size: 43px !important;
+    font-weight: 700 !important;
+
+  }
+
+  .container.my-5 section:nth-child(2) h3.text-primary.mb-3 {
+    font-size: 35px !important;
+    font-weight: 700 !important;
+  }
+
+
+
+
+
+
+}

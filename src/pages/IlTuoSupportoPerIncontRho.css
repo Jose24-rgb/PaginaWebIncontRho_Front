@@ -37,3 +37,36 @@ div.text-center.mt-4 > p.sostegno-footer {
   }
   
   
+
+  @media (max-width: 767px) {
+    /* Titolo principale h1 */
+    div.container.my-5 > h1.text-center.mb-4.text-primary {
+      font-size: 44px !important;
+      word-break: break-word !important;
+      white-space: normal !important;
+    }
+  
+    /* Tutti gli h2 dentro le section */
+    div.container.my-5 section.mb-5.p-4.border.rounded.shadow-sm.bg-light > h2.text-secondary.mb-3 {
+      font-size: 35px !important;
+      font-weight: 700 !important;
+    }
+
+    div.container.my-5 > section.mb-5.p-4.border.rounded.shadow-sm.bg-light:first-of-type p {
+        font-size: 25px !important;
+      }
+  
+  
+    /* Tutti i paragrafi dentro le section */
+    div.container.my-5 section.mb-5.p-4.border.rounded.shadow-sm.bg-light > p {
+      font-size: 25px !important;
+    }
+
+    div.container.my-5 section.mb-5.p-4.border.rounded.shadow-sm.bg-light h3.text-primary.mb-3{
+        font-size: 35px !important;
+        font-weight: 700 !important;
+      }
+
+  
+  }
+  
